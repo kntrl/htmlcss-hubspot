@@ -8,7 +8,9 @@ box-sizing: border-box;
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    color: #32495b;
+
 }
 
 .clearfix::after {
@@ -22,9 +24,19 @@ body {
     margin: 0 auto;
 }
 
+.common-text {
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
     color: #32495b;
+}
+
+/* margins*/
+
+.mb-40 { 
+    margin-bottom: 40px;
 }
 
 /* COLUMNS & COL LAYOUT*/
@@ -47,11 +59,17 @@ a {
 
 /* Buttons */
 .button { 
+    display: inline-block;
     color: white;
+    font-size: 14px;
     background-color: #fe775a;
     border: solid 1px #fe775a;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px 30px;
+}
+
+.gethubfree-caption {
+    font-size: 12px;
 }
 
 /* HEADER */
@@ -110,6 +128,11 @@ nav .right-menu {
     color: #00a4bd;
 }
 
+nav .button {
+    display: inline;
+    padding: 10px;
+}
+
 .login-btn.button {
     background-color:inherit;
     color:#fe775a;
@@ -121,12 +144,43 @@ nav .right-menu {
     padding: 25px 0;
 }
 
+.bottom-nav .right-menu .menu-item {
+    line-height: 30px;
+}
 
 /* bot-nav custom col dimension. Logo has no point being 50% considering menu col may grow. */
 .bottom-nav.two-col .col:first-child {
-    width:30%;
+    width:20%;
 }
 
 .bottom-nav.two-col .col:last-child {
-    width:70%;
+    width:80%;
+}
+
+/* Jumbotron*/
+.jumbotron {
+    height:600px;
+    background-color: #fff4ef;
+    background-image: url('../img/jumbotron.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+}
+
+.teaser {
+    width: 50%;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* header-divider*/
+
+.header-divider {
+    height: 86px;
+    border-top: solid 3px #32495b;
+    border-bottom: solid 3px #32495b;
+    background-color: #afebe4;
 }
