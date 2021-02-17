@@ -1,5 +1,119 @@
+/* GLOBAL AND COMMON*/
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #32495b;
+}
+
+/* COLUMNS & COL LAYOUT*/
+.col {
+    float: left;
+}
+
+.two-col .col {
+    width: 50%;
+}
+
+.three-col .col {
+
+}
+
+.four-col .col {
+
+}
+
+
+/* Buttons */
+.button { 
+    color: white;
+    background-color: #fe775a;
+    border: solid 1px #fe775a;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* HEADER */
+
+
+/* navs */
+
+.top-nav {
+    background-color: #f4f9fd;
+    border-bottom: 1px solid #32495b;
+    padding: 30px 0;
+    /* CODICE DA RIVEDERE O CANCELLARE*/
+    position: fixed;
+    top:0;
+    width: 100%;
+    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
+}
+
+
+/*menu styling*/
+
+
+nav .menu i {
+    padding-right: 5px;
+}
+
+nav .menu {
+    list-style-type: none;
+}
+
+nav .menu li {
+    display: inline-block;
+    padding:0 10px;
+} 
+
+.menu-item .father:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+    font-weight:900;
+}
+
+/**/
+nav .right-menu {
+    text-align: right;
+}
+
+
+
+/* top nav*/
+.top-nav .menu .menu-item.lang-menu {
+    border-right: 1px solid #32495b;
+}
+
+
+.top-nav .right-menu i {
+    color: #00a4bd;
+}
+
+.login-btn.button {
+    background-color:inherit;
+    color:#fe775a;
 }
