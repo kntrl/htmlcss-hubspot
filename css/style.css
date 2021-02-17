@@ -8,7 +8,7 @@ box-sizing: border-box;
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .clearfix::after {
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -57,19 +57,7 @@ a {
 /* HEADER */
 
 
-/* navs */
-
-.top-nav {
-    background-color: #f4f9fd;
-    border-bottom: 1px solid #32495b;
-    padding: 30px 0;
-    /* CODICE DA RIVEDERE O CANCELLARE*/
-    position: fixed;
-    top:0;
-    width: 100%;
-    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
-}
-
+/* nav */
 
 /*menu styling*/
 
@@ -91,12 +79,11 @@ nav .menu li {
     font-family: "Font Awesome 5 Free";
     content: "\f078";
     display: inline-block;
-    padding: 0 5px;
+    padding-left: 15px;
     vertical-align: middle;
     font-weight:900;
 }
 
-/**/
 nav .right-menu {
     text-align: right;
 }
@@ -108,6 +95,16 @@ nav .right-menu {
     border-right: 1px solid #32495b;
 }
 
+.top-nav {
+    padding: 30px 0;
+    background-color: #f4f9fd;
+    border-bottom: 1px solid #32495b;
+    /* CODICE DA RIVEDERE O CANCELLARE*/
+    /* position: fixed;
+    top:0;
+    width: 100%; */
+    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
+}
 
 .top-nav .right-menu i {
     color: #00a4bd;
@@ -116,4 +113,20 @@ nav .right-menu {
 .login-btn.button {
     background-color:inherit;
     color:#fe775a;
+}
+
+/*bottom nav*/
+.bottom-nav {
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+
+/* bot-nav custom col dimension. Logo has no point being 50% considering menu col may grow. */
+.bottom-nav.two-col .col:first-child {
+    width:30%;
+}
+
+.bottom-nav.two-col .col:last-child {
+    width:70%;
 }
