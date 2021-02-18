@@ -366,3 +366,25 @@ section.community {
     vertical-align: middle;
 }
 
+/* customer section*/
+
+.customer-row .col{
+    width:60%;
+    padding:0 50px;
+}
+
+.customer-row .col:first-child{
+    width:40%;
+}
+
+.customer-row h2 {
+    font-size: 48px;
+}
+
+.customer-row strong {
+    font-weight:800;
+}
+
+.customer-row .common-text {
+    line-height: 1.75;
+}
