@@ -12,6 +12,7 @@ ul {
 
 ul.hor li{
     display: inline-block;
+    margin-right: 15px;
 }
 
 body {
@@ -50,6 +51,10 @@ body {
 
 .txt-cent {
     text-align: center;
+}
+
+.txt-right {
+    text-align: right;
 }
 
 a {
@@ -95,6 +100,20 @@ a {
 }
 
 
+
+/* Custom col dimension for columns containing logo. 
+No point in keeping them 50% and wasting space for other col.
+.logo.col must be paired with .wider.col */
+
+.logo.col {
+    width:20%;
+}
+
+.wider.col {
+    width: 80%;
+}
+
+
 /* Buttons */
 .button { 
     display: inline-block;
@@ -131,11 +150,6 @@ nav .menu li {
     vertical-align: middle;
     font-weight:900;
 }
-
-nav .right-menu {
-    text-align: right;
-}
-
 
 
 /* top nav*/
@@ -177,15 +191,6 @@ nav .button {
 
 .bottom-nav .right-menu .menu-item {
     line-height: 30px;
-}
-
-/* bot-nav custom col dimension. Logo has no point being 50% considering menu col may grow. */
-.bottom-nav.two-col .col:first-child {
-    width:20%;
-}
-
-.bottom-nav.two-col .col:last-child {
-    width:80%;
 }
 
 /* Jumbotron*/
@@ -271,7 +276,7 @@ section.features .feature-box img {
     font-weight:500;
 }
 
-.feature-box .feat-list-item::before {
+.feature-box .list-item::before {
     font-family: "Font Awesome 5 Free";
     content: "\f058";
     color:#fe775a;
@@ -301,10 +306,6 @@ section.features .feature-box img {
 /*text column needs more space than img one.*/
 .feature-box .col:last-child {
     width: 80%;
-}
-
-.feat-list.hor .feat-list-item {
-    margin-right: 15px;
 }
 
 .feature-box .col .feat-description {
@@ -365,11 +366,10 @@ section.community {
 }
 
 /* customer section*/
-
 /* in this row columns aren't equally sized.*/
 /*customer row*/
 .container.tighter {
-    width: 90%;
+    width: 85%;
 }
 .customer-row .col{
     width:65%;
@@ -394,12 +394,10 @@ section.community {
 
 .customer-row .customer-list {
     margin-top: 15px;
-    text-align: right;
 }
 
-.customer-list .customer-logo {
+.customer-list .list-item {
     vertical-align: middle;
-    margin-right: 15px;
     margin-bottom: 15px;
 }
 .customer-list img {
@@ -408,6 +406,7 @@ section.community {
 }
 
 /* promoting-hubspot row */
+
 .promoting-hubspot h2 {
     font-size: 34px;
     padding-top: 20px;
@@ -434,7 +433,9 @@ footer {
 footer a {
     color: #cbd6e2;
 }
+
 /* sitemap row style*/
+
 .sitemap .four-col .col {
     width: 23%;
     margin-right: 2%;
@@ -460,4 +461,21 @@ footer a {
 
 .sitemap .snet-list .sn-item {
     margin-right: 20px;
+}
+
+/*language list row*/
+
+.language-bar-row {
+    padding-top: 25px;
+    border-bottom: 1px solid #cbd6e2;
+}
+
+.language-bar-row .lang-list {
+    text-align:center;
+}
+
+/* legal and policy row*/
+
+footer .copyright {
+    color: white;
 }
