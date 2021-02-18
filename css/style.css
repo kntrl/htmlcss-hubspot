@@ -130,16 +130,13 @@ No point in keeping them 50% and wasting space for other col.
 
 
 /* nav */
-
 /*menu styling*/
-
-
 nav .menu i {
     padding-right: 5px;
 }
 
-nav .menu li {
-    padding:0 10px;
+nav .menu .lang-item {
+    padding:0 15px;
 } 
 
 .menu-item .father:after {
@@ -153,7 +150,7 @@ nav .menu li {
 
 
 /* top nav*/
-.top-nav .menu .menu-item.lang-menu {
+.top-nav .menu .lang-item {
     border-right: 1px solid #32495b;
 }
 
@@ -182,6 +179,7 @@ nav .button {
 }
 
 /*bottom nav*/
+
 .bottom-nav {
     background-color: #fff;
     padding: 25px 0;
@@ -194,6 +192,7 @@ nav .button {
 }
 
 /* Jumbotron*/
+
 .jumbotron {
     height:600px;
     background-color: #fff4ef;
@@ -224,6 +223,7 @@ h1 {
 /*MAIN*/
 
 /*section */
+
 section {
     padding: 40px 0;
 }
@@ -245,13 +245,10 @@ section h3 {
 
 section.features {
     background-color: #f4f9fd;
-    /* CODICE DA RIVEDERE O CANCELLARE*/
-    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
 }
 
 section.features .product-intro img {
     width: 250px;
-    /* margin-bottom: 10px; */
 }
 
 section.features .feature-box img {
@@ -300,16 +297,6 @@ section.features .feature-box img {
 /*selecting orizontal feature box that has different rules from vertical ones*/
 .feature-box .col {
     padding:40px;
-    width:20%;
-}
-
-/*text column needs more space than img one.*/
-.feature-box .col:last-child {
-    width: 80%;
-}
-
-.feature-box .col .feat-description {
-    width: 90%;
 }
 
 .feature-box .col h4,
@@ -336,8 +323,6 @@ section.community {
 .community-stat .col {
     padding: 10px ;
     border-right: 1px solid #fff;
-    /* CODICE DA RIVEDERE O CANCELLARE*/
-    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
 }
 
 .community-stat .col:nth-child(4n) {
@@ -366,7 +351,7 @@ section.community {
 }
 
 /* customer section*/
-/* in this row columns aren't equally sized.*/
+/* in this section columns aren't equally sized.*/
 /*customer row*/
 .container.tighter {
     width: 85%;
@@ -442,17 +427,6 @@ footer a {
 }
 
 /* sitemap row style*/
-
-.sitemap .four-col .col {
-    width: 23%;
-    margin-right: 2%;
-
-}
-
-.sitemap .col:last-child {
-    margin-right: 0%;
-}
-
 
 .sitemap .sitemap-list .sm-item {
     margin-bottom: 20px;
