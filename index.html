@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER - 2 NAVS [1 is fixed pos top,both 2 columns],1 JUMBOTRON with teaser , FIXED HEIGHT DIV AS "DIVIDER" -->
@@ -21,13 +21,13 @@
             <div class="container">
                 <div class="clearfix">
                     <div class="col">
-                        <ul class="menu left-menu">
+                        <ul class="menu hor left-menu">
                             <li class="menu-item lang-menu"><a href="" class="menu-link father"><i class="fas fa-globe-europe"></i>English</a></li>
                             <li class="menu-item"><a href="" class="menu-link">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col">
-                        <ul class="menu right-menu">
+                        <ul class="menu hor right-menu">
                             <li class="menu-item"><a href="" class="menu-link"><i class="fas fa-search"></i></a></li>
                             <li class="menu-item"><a href="" class="menu-link login-btn button">Log in</a></li>
                             <li class="menu-item"><a href="" class="menu-link button">GetHubspotFree</a></li>
@@ -43,7 +43,7 @@
                 <div class="clearfix">
                     <div class="col logo"><img src="img/logo.svg" alt=""></div>
                     <div class="col menu right-menu">
-                        <ul class="menu">
+                        <ul class="menu hor">
                             <li class="menu-item"><a href="" class="menu-link father">Software</a></li>
                             <li class="menu-item"><a href="" class="menu-link">Pricing</a></li>
                             <li class="menu-item"><a href="" class="menu-link father">Resources</a></li>
@@ -76,11 +76,55 @@
     <!-- HEADER ENDS -->
 
     <!-- MAIN with 3 section [features,community,customers] with various layout each  -->
-    <main></main>    
+    <main>
+
+    </main>    
     <!-- MAIN ENDS -->
 
     <!-- FOOTER 3 row footer-->
-    <footer></footer>
+    <footer>
+        <main>
+            <section class="features">
+                <div class="container half">
+                    <div class="product-intro txt-cent mb-40">
+                        <img src="img/integrations_illustration.webp" alt="Integrations">
+                        <h2 class="mb-30">Powerful Alone. Better Together</h2>
+                        <p class="common-text">Hubspot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They're powerful alone - but even better when used together.</p>   
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="feature-box mb-40 clearfix">
+                        <div class="col txt-cent">
+                            <img src="img/crm-Illustration.svg" alt="CRM illustration">
+                            <a class="button" href="">Learn More</a>
+                        </div>
+                        <div class="col">
+                            <div class="feat-description mb-20">
+                                <h3 class="mb-30">Free Hubspot CRM</h3>
+                                <p class="common-text">Everything you need to organize, track, and vuild better relationships with leads and custormers. Yes, it's 100% free. Forever.</p>
+                            </div>
+                            <h4 class="mb-20">Popular Feature</h4>
+                            <div class="divider mb-20"></div>
+                            <ul class="feat-list hor">
+                                <li class="feat-list-item">Contact Insight</li>
+                                <li class="feat-list-item">Deals</li>
+                                <li class="feat-list-item">Task</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="clearfix three-col txt-cent">
+                        <div class="feature-box col">
+                            <img src="img/marketing-hub-free.svg" alt="">
+                        </div>
+                    
+                        <div class="feature-box col">Deals</div>
+                        <div class="feature-box col">Task</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </footer>
     <!-- FOOTER  with various layout each-->
 </body>
 </html>

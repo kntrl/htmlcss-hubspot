@@ -6,8 +6,16 @@ padding: 0;
 box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul.hor li{
+    display: inline-block;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #32495b;
 
@@ -24,8 +32,24 @@ body {
     margin: 0 auto;
 }
 
+.container.half {
+    width: 50%;
+}
+
+
+/* fonts - links*/
 .common-text {
     line-height: 1.5;
+    font-weight: 500;
+}
+
+.gethubfree-caption {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.txt-cent {
+    text-align: center;
 }
 
 a {
@@ -39,6 +63,15 @@ a {
     margin-bottom: 40px;
 }
 
+.mb-30 { 
+    margin-bottom: 30px;
+}
+
+.mb-20 { 
+    margin-bottom: 20px;
+}
+
+
 /* COLUMNS & COL LAYOUT*/
 .col {
     float: left;
@@ -49,7 +82,11 @@ a {
 }
 
 .three-col .col {
+    width:32%;
+}
 
+.three-col .col:nth-child(2) {
+    margin: 0 2%;
 }
 
 .four-col .col {
@@ -68,9 +105,6 @@ a {
     padding: 20px 30px;
 }
 
-.gethubfree-caption {
-    font-size: 12px;
-}
 
 /* HEADER */
 
@@ -84,12 +118,7 @@ nav .menu i {
     padding-right: 5px;
 }
 
-nav .menu {
-    list-style-type: none;
-}
-
 nav .menu li {
-    display: inline-block;
     padding:0 10px;
 } 
 
@@ -141,6 +170,9 @@ nav .button {
 /*bottom nav*/
 .bottom-nav {
     background-color: #fff;
+    /* CODICE DA RIVEDERE O CANCELLARE*/
+    /* margin-top: 80px; */
+    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
     padding: 25px 0;
 }
 
@@ -172,8 +204,8 @@ nav .button {
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 /* header-divider*/
@@ -183,4 +215,102 @@ h1 {
     border-top: solid 3px #32495b;
     border-bottom: solid 3px #32495b;
     background-color: #afebe4;
+}
+
+/*MAIN*/
+
+/*section */
+
+section h2 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+section h3 {
+    font-size: 25px;
+}
+
+/* feature section*/
+
+section.features {
+    background-color: #f4f9fd;
+    padding: 40px 0;
+    /* CODICE DA RIVEDERE O CANCELLARE*/
+    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
+}
+
+section.features .product-intro img {
+    width: 250px;
+    /* margin-bottom: 10px; */
+}
+
+section.features .feature-box img {
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.feature-box {
+    padding: 20px;
+    background-color:#fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #d7dce0;
+}
+
+.feature-box h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.feature-box .feat-list-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    color:#fe775a;
+    display: inline-block;
+    padding-right: 15px;
+    vertical-align: middle;
+    font-weight:900;
+}
+
+.divider {
+    width:90%;
+    border: 1px solid #899397;
+}
+
+
+
+
+/* horizontal feature box */
+/*selecting orizontal feature box that has different rules from vertical ones*/
+.feature-box .col {
+    padding:40px;
+    width:20%;
+}
+
+/*text column needs more space than img one.*/
+.feature-box .col:last-child {
+    width: 80%;
+}
+
+ul.hor .feat-list-item {
+    margin-right: 15px;
+}
+
+.feature-box .col .feat-description {
+    width: 90%;
+}
+
+.feature-box .col h4,
+.feature-box .col .divider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feature-box .col h4 {
+    margin-right: 50px;
+}
+
+.feature-box .col .divider {
+    width: 70%;
 }
