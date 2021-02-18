@@ -44,7 +44,7 @@ body {
 }
 
 .caption {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -369,7 +369,7 @@ section.community {
 /* customer section*/
 
 /* in this row columns aren't equally sized.*/
-
+/*customer row*/
 .container.tighter {
     width: 90%;
 }
@@ -406,4 +406,25 @@ section.community {
 .customer-list img {
     width : 125px;
     height: auto;
+}
+
+/* promoting-hubspot row */
+
+.promoting-hubspot .col {
+    padding: 40px;
+}
+
+.promoting-hubspot h2 {
+    font-size: 34px;
+    padding-top: 20px;
+}
+
+.promoting-hubspot img {
+    height: 350px;
+    width: auto;
+}
+
+
+.promoting-hubspot .col:last-child {
+    text-align: right;
 }
