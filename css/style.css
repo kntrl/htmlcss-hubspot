@@ -147,11 +147,10 @@ nav .right-menu {
     padding: 30px 0;
     background-color: #f4f9fd;
     border-bottom: 1px solid #32495b;
-    /* CODICE DA RIVEDERE O CANCELLARE*/
-    /* position: fixed;
+    /*pretty raw attempt to get the top nav not scrolling */
+    position: fixed;
     top:0;
-    width: 100%; */
-    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
+    width: 100%;
 }
 
 .top-nav .right-menu i {
@@ -171,10 +170,9 @@ nav .button {
 /*bottom nav*/
 .bottom-nav {
     background-color: #fff;
-    /* CODICE DA RIVEDERE O CANCELLARE*/
-    /* margin-top: 80px; */
-    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
     padding: 25px 0;
+    /* pretty raw attempt to get the top nav not scrolling */
+    margin-top: 80px;
 }
 
 .bottom-nav .right-menu .menu-item {
@@ -396,6 +394,7 @@ section.community {
 
 .customer-row .customer-list {
     margin-top: 15px;
+    text-align: right;
 }
 
 .customer-list .customer-logo {
@@ -409,11 +408,6 @@ section.community {
 }
 
 /* promoting-hubspot row */
-
-.promoting-hubspot .col {
-    padding: 40px;
-}
-
 .promoting-hubspot h2 {
     font-size: 34px;
     padding-top: 20px;
@@ -424,7 +418,46 @@ section.community {
     width: auto;
 }
 
-
 .promoting-hubspot .col:last-child {
     text-align: right;
+}
+
+
+/*FOOTER*/
+
+footer { 
+    padding: 40px 0;
+    background-color:#32495b;
+    color: #fff;
+}
+
+footer a {
+    color: #cbd6e2;
+}
+/* sitemap row style*/
+.sitemap .four-col .col {
+    width: 23%;
+    margin-right: 2%;
+
+}
+
+.sitemap .col:last-child {
+    margin-right: 0%;
+}
+
+
+.sitemap .sitemap-list .sm-item {
+    margin-bottom: 20px;
+}
+
+.sitemap .button {
+    background-color: #dadee0;
+    color: #32495b;
+    border-color: #dadee0;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.sitemap .snet-list .sn-item {
+    margin-right: 20px;
 }
