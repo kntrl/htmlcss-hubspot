@@ -407,6 +407,13 @@ section.community {
 
 /* promoting-hubspot row */
 
+.promoting-hubspot .col {
+    width:45%;
+}
+
+.promoting-hubspot .col:last-child {
+    width: 55%;
+}
 .promoting-hubspot h2 {
     font-size: 34px;
     padding-top: 20px;
