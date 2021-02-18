@@ -368,13 +368,18 @@ section.community {
 
 /* customer section*/
 
+/* in this row columns aren't equally sized.*/
+
+.container.tighter {
+    width: 90%;
+}
 .customer-row .col{
-    width:60%;
-    padding:0 50px;
+    width:65%;
+    padding-left: 50px;
 }
 
 .customer-row .col:first-child{
-    width:40%;
+    width:35%;
 }
 
 .customer-row h2 {
@@ -387,4 +392,18 @@ section.community {
 
 .customer-row .common-text {
     line-height: 1.75;
+}
+
+.customer-row .customer-list {
+    margin-top: 15px;
+}
+
+.customer-list .customer-logo {
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.customer-list img {
+    width : 125px;
+    height: auto;
 }
