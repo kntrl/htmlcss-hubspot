@@ -82,11 +82,11 @@ a {
 }
 
 .three-col .col {
-    width:32%;
+    width:30%;
 }
 
 .three-col .col:nth-child(2) {
-    margin: 0 2%;
+    margin: 0 5%;
 }
 
 .four-col .col {
@@ -220,6 +220,9 @@ h1 {
 /*MAIN*/
 
 /*section */
+section {
+    padding: 40px 0;
+}
 
 section h2 {
     font-size: 30px;
@@ -234,7 +237,6 @@ section h3 {
 
 section.features {
     background-color: #f4f9fd;
-    padding: 40px 0;
     /* CODICE DA RIVEDERE O CANCELLARE*/
     /* FINE CODICE DA RIVEDERE O CANCELLARE*/
 }
@@ -251,7 +253,7 @@ section.features .feature-box img {
 }
 
 .feature-box {
-    padding: 20px;
+    padding: 20px 40px;
     background-color:#fff;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #d7dce0;
@@ -261,6 +263,10 @@ section.features .feature-box img {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 800;
+}
+
+.feature-box .feat-list {
+    font-weight:500;
 }
 
 .feature-box .feat-list-item::before {
@@ -274,11 +280,13 @@ section.features .feature-box img {
 }
 
 .divider {
-    width:90%;
+    margin-left: auto;
     border: 1px solid #899397;
 }
 
-
+.feature-box.col .feat-list {
+    text-align:left;
+}
 
 
 /* horizontal feature box */
@@ -293,7 +301,7 @@ section.features .feature-box img {
     width: 80%;
 }
 
-ul.hor .feat-list-item {
+.feat-list.hor .feat-list-item {
     margin-right: 15px;
 }
 
