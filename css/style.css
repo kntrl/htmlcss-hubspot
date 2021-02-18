@@ -43,7 +43,7 @@ body {
     font-weight: 500;
 }
 
-.gethubfree-caption {
+.caption {
     font-size: 12px;
     font-weight: 500;
 }
@@ -72,6 +72,7 @@ a {
 }
 
 
+
 /* COLUMNS & COL LAYOUT*/
 .col {
     float: left;
@@ -90,7 +91,7 @@ a {
 }
 
 .four-col .col {
-
+    width:25%;
 }
 
 
@@ -224,6 +225,10 @@ section {
     padding: 40px 0;
 }
 
+section img {
+    display: inline-block;
+}
+
 section h2 {
     font-size: 30px;
     font-weight: 800;
@@ -248,7 +253,6 @@ section.features .product-intro img {
 
 section.features .feature-box img {
     height: 100px;
-    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -322,3 +326,43 @@ section.features .feature-box img {
 .feature-box .col .divider {
     width: 70%;
 }
+
+/* community section*/
+
+section.community {
+    background-image: linear-gradient(to right,#00a4bd,#00bca6);
+    color:white;
+}
+
+.community-stat .col {
+    padding: 10px ;
+    border-right: 1px solid #fff;
+    /* CODICE DA RIVEDERE O CANCELLARE*/
+    /* FINE CODICE DA RIVEDERE O CANCELLARE*/
+}
+
+.community-stat .col:nth-child(4n) {
+    border-right: none;
+}
+
+.community-stat .col:nth-child(-n+4) {
+    border-bottom: 1px solid #fff;
+}
+
+
+.community-stat img {
+    margin-bottom:5px;
+}
+
+
+.community-stat .stat-number {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.community-stat .stat-number .plus{
+    font-size: 24px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
